@@ -15,6 +15,7 @@ body {
   color: #f4f4ff;
 }
 
+/* Head CSS */
 header {
   grid-area: header;
   height: 20vh;
@@ -25,6 +26,12 @@ header p {
   padding-left: 10px;
 }
 
+header h2,
+p {
+  padding-left: 10px;
+}
+
+/* Main CSS */
 main {
   grid-area: main;
   height: 70vh;
@@ -32,9 +39,13 @@ main {
   color: #1d1c1c;
 }
 
-main h2,
-h3 {
+main h3 {
   padding-left: 10px;
+}
+
+main h2 {
+  color: red;
+  font-size: 40px;
 }
 
 main img {
@@ -42,6 +53,11 @@ main img {
   width: 20vw;
   padding-left: 10px;
 }
+
+main .description {
+  padding-left: 23vw;
+}
+/* Aside CSS */
 
 aside {
   grid-area: aside;
@@ -55,11 +71,11 @@ aside img {
   border-radius: 50%;
 }
 
-header h2,
-p {
-  padding-left: 10px;
+aside .aside-description {
+  padding-left: 10vw;
 }
 
+/* Footer CSS */
 footer {
   grid-area: footer;
   height: 10vh;
