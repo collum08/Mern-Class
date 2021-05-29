@@ -1,0 +1,28 @@
+.container {
+  margin: 0;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aqua;
+  align-items: center;
+  height: 15vh;
+  border: brown solid 3px;
+}
+
+.logo img {
+  height: 7vh;
+  width: 7wh;
+}
+
+.nav2 a {
+  text-decoration: none;
+}
+
+.nav2 button:hover {
+  background-color: blue;
+}
+
+.nav2 button {
+  background-color: cornflowerblue;
+}
