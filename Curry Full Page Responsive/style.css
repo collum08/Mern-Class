@@ -8,32 +8,34 @@
 }
 
 header {
-  height: 15vh;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3vh 0 0 0;
+  border-bottom: #d0ad47 solid 10px;
+  width: 100%;
 }
 
-nav {
-  display: flex;
-  flex-direction: row-reverse;
+.title {
+  color: #d0ad47;
+  font-size: 35px;
 }
 
 nav button {
-  padding: 16px 30px;
-  margin: 2vh 3vh;
+  padding: 10px 10px;
   background-color: white;
   border-radius: 20%;
-}
-
-button a {
-  text-decoration: none;
+  margin: 0 2vh 0 2vh;
+  font-size: 25px;
+  color: black;
 }
 
 nav button:hover {
-  filter: brightness(40%);
-  padding: 0 50px;
-}
-
-nav button a:hover {
-  color: green;
+  background-color: #d0ad47;
+  border-color: #d0ad47;
+  padding: 10 50px;
+  color: #f4f4f4;
 }
 
 main {
@@ -42,11 +44,21 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: brightness(40%);
+}
+
+.coverfont {
+  height: 35vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  /* the last decimal represent the transparent filter */
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15vh;
 }
 
 aside {
   height: 30vh;
+  border-top: #d0ad47 solid 10px;
 }
 
 .box {
@@ -63,7 +75,7 @@ aside {
   width: 200px;
   background-image: url("chicken curry.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   font-size: 20px;
   font-weight: 900;
   color: white;
@@ -131,10 +143,8 @@ button p:hover {
 }
 
 footer {
-  height: 5vh;
-  border-bottom: #00703c solid 5px;
-  border-top: #00703c solid 5px;
-  background-color: #f5c71a;
+  height: 8vh;
+  background-color: #d0ad47;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
