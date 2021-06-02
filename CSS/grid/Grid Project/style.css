@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "nav nav nav"
+    "nav nav nav"
+    "b main aside"
+    "b main aside"
+    "b main aside"
+    "b main aside"
+    "footer footer footer";
+  grid-gap: 10px;
+  height: 100vh;
+}
+.item {
+  border: red solid 3px;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 110px;
+  position: absolute;
+}
+
+nav {
+  grid-area: nav;
+  background-image: url(nav\ banner\ 1.jpg);
+  background-position: top, left;
+  background-size: cover;
+}
+
+main {
+  grid-area: main;
+  background-image: url(yandere.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+main:hover {
+  background-image: url(yandere\ hover.jpg);
+}
+
+aside {
+  grid-area: aside;
+  background-image: url(cool.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+aside:hover {
+  background-image: url(Cool\ hover.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+footer {
+  grid-area: footer;
+  background-image: url(footer\ 2.png);
+  background-position: bottom;
+  background-size: cover;
+}

@@ -1,0 +1,73 @@
+.dropdown {
+  background-color: aquamarine;
+  padding: 5vh;
+}
+
+.dropbutton {
+  font-size: 20px;
+  border: none;
+  color: crimson;
+  padding: 10px;
+  /**test out the position to understand why it is important in dropdown*/
+  position: relative;
+}
+
+.content {
+  display: none;
+  /**test out the position to understand why it is important in dropdown*/
+  position: absolute;
+  background-color: darkcyan;
+  border: darkmagenta 2px solid;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.content a {
+  text-decoration: none;
+  font-size: 20px;
+  border: darkmagenta 2px solid;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.content a:hover {
+  background-color: forestgreen;
+}
+
+/*! Start on the multiple dropdown css*/
+.option1 {
+  position: relative;
+}
+
+.mini-content1 {
+  position: absolute;
+  display: none;
+  background-color: darkcyan;
+  left: 100%; /* set the box at the right side of the content box*/
+  top: 0; /* set the box to be side by side to the option 1 box*/
+}
+
+.option1:hover .mini-content1 {
+  display: block;
+}
+
+.option2 {
+  position: relative;
+}
+
+.mini-content2 {
+  position: absolute;
+  display: none;
+  background-color: darkcyan;
+  left: 100%; /* set the box at the right side of the content box*/
+  top: 0; /* set the box to be side by side to the option 2 box*/
+  /*? z index is not needed because it is already in the parent of the content which has been specified*/
+}
+
+.option2:hover .mini-content2 {
+  display: block;
+}
