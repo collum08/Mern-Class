@@ -1,0 +1,30 @@
+//? the benefits of scss
+//? 1. operator (addition etc...)
+//? 2. variables
+//? 3. nesting
+//? 4. @mixin / @include
+//? 5. parameters
+//? 6. partials
+//? 7. @imports
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$cor: blue;
+
+h1 {
+  background-color: $cor;
+  font-size: 50px + 10px; //? 1. operator
+  a {
+    color: red; //?nesting
+    font-size: 49px;
+  }
+
+  h2 {
+    color: pink;
+    background-color: yellowgreen;
+  }
+}

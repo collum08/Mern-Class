@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JS statement</h1>
+    <p>A <b>JS Program</b> is a list of <b>statement</b> to be executed by a computer</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <h1>JS Statement</h1>
+    <p>Number can be written with or without decimals</p>
+    <P id="numbers"></P>
+
+    <h1>JS String</h1>
+    <p>Sting can be written double or single quotes</p>
+    <p id="string"></p>
+
+    <h1>JS statement</h1>
+    <p id="statement"></p>
+
+    <h1>JS CODE BLOCK</h1>
+    <button type="button" onclick="myFunction()">Click me</button>
+    <p id="block1"></p>
+    <p id="block2"></p>
+
+    <script>
+        var v, x, y, z; //declare variables of x y and z
+        x=5; //assign the velue to x
+        y=20; //assign the values to y
+        z= y - x; //assign the sum equation to z (operators)
+        v= (x*10) - (y*5) //assign operator to v
+
+        //or multiple line can be done as well
+
+        // var x, y, z; x=5; y=20; z= y -x;
+
+        document.getElementById('demo').innerHTML='the value of z is'+ z +'.';
+        document.getElementById('demo2').innerHTML = 'the value of v is' + v + '.';
+
+        document.getElementById('numbers').innerHTML=10.53435;
+
+        document.getElementById('string').innerHTML='Adam is so smart';
+
+        document.getElementById('statement').innerHTML='Hello Adam'; //javascript statement
+        
+        window.alert('Adam is the best!'); //window alert pop out
+
+        function myFunction() {
+            document.getElementById('block1').innerHTML= 'This is block 1';
+            document.getElementById('block2').innerHTML='this is block 2';
+        }
+        
+    </script>
+
+</body>
+</html>

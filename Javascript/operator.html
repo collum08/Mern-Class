@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="j">dsfsd</p>
+
+    <script>
+        var preeti='pretty';
+        var p=preeti ;
+        var j=0;
+        j++; //j+1 = 1
+        j++; //(j+1) + 1 =2
+        console.log(j) //view the console log after inpext the web
+        j++;
+        window.alert(j);
+        j++;
+        //window.write('j'); //!need to check
+        j--;
+        document.getElementById('j').innerHTML=j; 
+    
+
+
+
+        var fan={color:{big:'red', medium:'green'}, size:'small', fan:3, speed:1000};
+        console.log(fan) //(fan.color) to get all colors display
+        //(fan.color.big) to get red color to display
+
+
+
+        //proto and prototype
+        var meow={
+            name:'siddarth',
+            city:'mumbai',
+            guess:function(){
+                console.log(this.name+' is in '+ this.city)
+            }
+
+        }
+        var meow2={
+            name:'sonu'
+        }
+
+        console.log(meow.guess())
+        meow2.__proto__=meow //both var will be link with each other
+        //view in console
+        //edit: look to the video from class
+
+
+
+        //array
+        var a=[1,2,3]
+        var b=['santhosh', 'preeti', 'blessy'];
+
+        console.log(b[1]) //console will show preeti
+        // array start with 0
+        b.love='lol'; // u can add another value from var
+        console.log(b)
+        b.push('banana')
+        console.log(b) //console will list the var b for full array
+
+
+        
+    
+    
+    </script>
+</body>
+</html>

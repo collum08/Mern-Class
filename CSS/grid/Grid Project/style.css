@@ -4,10 +4,10 @@
     "nav nav nav"
     "nav nav nav"
     "nav nav nav"
-    "b main aside"
-    "b main aside"
-    "b main aside"
-    "b main aside"
+    "space main aside"
+    "space main aside"
+    "space main aside"
+    "space main aside"
     "footer footer footer";
   grid-gap: 10px;
   height: 100vh;
@@ -58,7 +58,7 @@ aside:hover {
 
 footer {
   grid-area: footer;
-  background-image: url(footer\ 2.png);
+  background-image: url(nav\ banner\ 1.jpg);
   background-position: bottom;
   background-size: cover;
 }

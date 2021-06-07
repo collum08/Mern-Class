@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  background-color: blue;
+  font-size: 60px;
+}
+
+h1 a {
+  color: red;
+  font-size: 49px;
+}
+
+h1 h2 {
+  color: pink;
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */

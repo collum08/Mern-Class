@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Code for time and date -->
+    <div class="time-date">
+        <h2>my first java script</h2>
+        <button type="button" 
+        onclick="document.getElementById('demo').innerHTML=Date()">
+        Click me to display date and time</button>
+        <p id="demo"></p>
+    </div>
+
+    <!-- JS change HTML -->
+    <div class="second-js">
+        <h1>What can Javascript do?</h1>
+        <button type="button" onclick="document.getElementById('adam').innerHTML
+        ='Hello Adam'">Click me</button>
+        <p id="adam"></p>
+    </div>
+
+    <!-- Javascript can hide html element -->
+    <div class="hide-element">
+        <h1>Magic Trick</h1>
+
+        <p id="magic">Now you see me</p>
+
+        <button type="button"
+        onclick="document.getElementById('magic').style.display='none'">
+        Click me</button>
+    </div>
+
+    <!-- Javascript can show hidden html element -->
+    <h1>Magic Trick</h1>
+
+    <p id="magic2" style="display: none;"> Woops you found me</p>
+    <button type="button"
+    onclick="document.getElementById('magic2').style.display='block'">Wanna see me?</button>
+    <script>
+        
+        
+    </script>
+</body>
+</html>
