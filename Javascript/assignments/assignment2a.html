@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- assignment 1 -->
+    <center>
+        <h1>Assignment 1</h1>
+    </center>
+    <h2>Input Your Voucher: KAJOL and date</h2>
+    <input type="text" placeholder="KAJOL" id="voucher">
+    <input type="text" placeholder="Date: 7th June" id="date">
+    <button type="button" onclick="myFunction()">Confirmed</button>
+    <p></p>
+    <p id="first"></p>
+    <p id="result"></p>
+    
+    <script>
+
+        function myFunction() {
+            let voucher = document.getElementById("voucher").value;;
+            let voucherdate;
+            let insertvoucher;
+            let text1;
+            let text2;
+            let date = document.getElementById("date").value;
+
+            if (insertvoucher = "KAJOL") {
+                text1 = ("Your Voucher is valid");
+                if (voucherdate = "7th June") {
+                    text2 = ("Your Voucher is still available");
+                }
+                else {
+                    text2 = ("Your voucher is not available");
+                }
+                document.getElementById("result").innerHTML = text2;
+            }
+
+            else {
+                text1 = ("your voucher is invalid");
+            }
+            document.getElementById("first").innerHTML = text1;
+
+        }
+    </script>
+
+</body>
+</html>

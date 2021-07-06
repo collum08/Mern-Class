@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- assignment 2 -->
+    <center><h1>Assignment 2</h1></center>
+    <h2>Input Number between 1-7 to identify the days of the week</h2>
+    <input type="number" placeholder="Input number from 1 to 7..." id="day">
+    <button type="button" onclick="myFunction()">Confirmed</button>
+    <p id="display"></p>
+
+    <script>
+        function myFunction() {
+            let day = document.getElementById("day").value;
+            let text; 
+
+            
+            switch(day){
+                case "1":
+                    text =("Today is Monday")
+                    break;
+                case "2":
+                    text =("Today is Tuesday")
+                    break;
+                case "3":
+                    text =("Today is Wednesday")
+                    break;
+                case '4':
+                    text =("Today is Thursday")
+                    break;
+                case '5':
+                    text =("Today is Friday")
+                    break;
+                case '6':
+                    text =("Today is Saturday")
+                    break;
+                case '7':
+                    text =("Today is Sunday")
+                    break;
+                default:
+                    text =("Invalid Entry")
+                }
+                document.getElementById("display").innerHTML = text;
+        }
+
+
+    </script>
+</body>
+</html>
